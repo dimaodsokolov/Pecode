@@ -4,11 +4,12 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 
 
-@ExtendWith(TestListener.class)
+@Listeners(TestListener.class)
 public class LoginPageTest extends BaseTest {
     private MainPage mainPage;
     private AccountPage accountPage;
